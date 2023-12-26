@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-color: #181920;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #181920;
+}
+
+.navMenuLogin {
+  padding: 2rem 1rem;
+}
+
+.btnVoltarLogin {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #181920;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.arealogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login {
+  background-color: white;
+  width: 400px;
+  padding: 2rem;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login label {
+  font-weight: 700;
+  color: #181920;
+  margin-top: 10px;
+}
+
+.login input {
+  border: none;
+  background-color: rgb(236, 236, 236);
+  border-radius: 8px;
+  outline: none;
+  padding: 1rem;
+}
+
+.login input.required {
+  border: 2px solid #ff3860;
+}
+
+.login img {
+  width: 65px;
+}
+
+.botoesLogin {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.botoesLogin button {
+  appearance: none;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.botoesLogin button:hover {
+  color: #fff;
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.formBotoes--Cadastrar:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.botoesLogin button {
+  color: black;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid red;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.botoesLogin button:is(:hover, :focus) {
+  color: #ffffff;
+  background: #be3237;
+  border: 1px solid #be3237;
+  text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+  box-shadow: 0 0 2px #be3237, 0 0 2px #be3237, 0 0 8px #be3237,
+    0 0 20px #be3237;
+}
+
+.content .cadastro {
+  width: 30%;
+  background-color: rgb(66, 66, 66);
+  border: 2px solid rgb(255, 54, 54);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 2rem;
+  margin: auto;
+  display: none;
+}
+
+/* CHECKBOX SALVAR */
+
+.checkbox-apple p {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  font-weight: 500;
+}
+
+.checkbox-apple label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 13px;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkbox-apple label:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.checkbox-apple input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-apple input[type="checkbox"]:checked + label {
+  background: linear-gradient(to bottom, #4cd964, #5de24e);
+}
+
+.checkbox-apple input[type="checkbox"]:checked + label:after {
+  transform: translateX(25px);
+}
+
+.checkbox-apple label:hover {
+  background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+}
+
+.checkbox-apple label:hover:after {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.yep {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+}
+
+.btnLogin span {
+  text-decoration: underline;
+  font-weight: 400;
+  color: blue;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .login {
+    width: 300px;
+  }
+}
+
+/* TELA DE CADASTRO -TELA DE CADASTRO - TELA DE CADASTRO */
+.areaCadastro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to left top,
+      #ff6666,
+      #e3514e,
+      #c73c37,
+      #ab2620,
+      #900a0a
+    )
+    1;
+}
+
+.cadastro {
+  background-color: white;
+  max-width: 700px;
+  padding: 1rem 2rem;
+}
+
+.cadastro img {
+  width: 20%;
+  padding: 1rem;
+}
+
+.cadastro input {
+  width: 100%;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  border-radius: 8px;
+  outline: none;
+  padding: 0.5rem;
+}
+.cadastro input.required {
+  border: 2px solid #ff3860;
+}
+
+.cadastro,
+.erroCpf,
+.erroDate,
+.erroSexo,
+.erroTelefone,
+.erroCelular,
+.erroCep,
+.erroEndereco,
+.erroLogin,
+.erroSenha,
+.erroNomematerno,
+.erroPLogin,
+.erroPSenha {
+  color: #ab2620;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cadastro label {
+  color: #181920;
+  font-weight: 600;
+}
+
+.formBotoes button {
+  outline: none;
+  background: none;
+  border-radius: 0.3rem;
+  border: 1px solid red;
+  padding: 0.7rem;
+}
+
+.formBotoes--Voltar {
+  font-weight: 500;
+  color: black;
+  outline: none;
+  background: none;
+  border-radius: 0.3rem;
+  border: 1px solid red;
+  padding: 0.7rem;
+  text-decoration: none;
+}
+
+.formBotoes--Voltar::before {
+  content: "<-";
+  padding: 0.5rem;
+  display: none;
+}
+
+.formBotoes--Voltar:hover::before {
+  display: inline;
+}
+
+.formBotoes--Cadastrar {
+  appearance: none;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.formBotoes--Cadastrar:hover {
+  color: #fff;
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.formBotoes--Cadastrar:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .cadastro {
+    min-width: 600px;
+  }
+
+  .cadastro input {
+    height: 30px;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .cadastro label {
+    font-size: 0.8rem;
+  }
+
+  .cadastro input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .formBotoes button {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cadastro {
+    min-width: 350px;
+    padding: 1rem;
+  }
+
+  .cadastro img {
+    display: none;
+  }
+}

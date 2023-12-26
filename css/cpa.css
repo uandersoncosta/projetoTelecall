@@ -1,0 +1,431 @@
+body {
+  background-color: var(--main-color);
+  color: var(four-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 3%;
+  border-bottom: 1px solid rgb(95, 95, 95);
+  backdrop-filter: blur(30px) saturate(180%);
+  background: rgba(17, 25, 40, 0.5);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 500;
+  color: white;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+
+nav ul li:hover {
+  color: #e74a4f;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #e74a4f;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem !important;
+  text-shadow: 5px 2px 8px rgba(28, 12, 8, 0.5);
+}
+
+.logoImgNav {
+  display: contents;
+}
+
+nav img {
+  z-index: 1000;
+  width: 10%;
+  background-color: transparent;
+}
+
+.menuMobile {
+  width: 3rem;
+}
+
+.menuMobile {
+  width: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  nav ul {
+    display: none;
+  }
+
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .btnLoginInicial {
+    display: none;
+  }
+  .btnLoginInicial.open {
+    display: flex;
+  }
+}
+
+@media (min-width: 950px) {
+  .menuMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  nav ul {
+    display: none;
+  }
+  .btnLoginInicial {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .menuMobile {
+    display: none;
+  }
+}
+
+.menuAntes {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.3rem 4%;
+  background: rgba(17, 25, 40, 0.75);
+  margin: 0;
+  z-index: 1000;
+}
+
+.menuAntes li {
+  padding: 0.5rem;
+}
+
+.menuAntes li a {
+  color: white;
+  text-decoration: none;
+}
+
+.btnModoDark {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.increMinusFont img {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.btnLoginInicial {
+  width: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  margin: 20px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 8px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnLoginInicial:hover {
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnLoginInicial.bn18 {
+  background-image: linear-gradient(
+    to right,
+    #be3237,
+    #ee5862,
+    #ee5862,
+    #be3237
+  );
+  box-shadow: 0 4px 15px 0 rgba(196, 54, 49, 0.75);
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--second-color);
+  display: none;
+}
+
+.usuario .usuarioNome {
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.usuario .sairLogin {
+  background: none;
+  border: none;
+  color: var(--second-color);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.usuario .sairLogin:hover {
+  text-decoration: underline;
+}
+
+/* O QUE É CPASS  */
+
+.oqueecpaas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 150px 3%;
+}
+
+.oqueecpaas div {
+  padding: 1rem;
+  text-align: justify;
+  color: var(--four-color);
+  width: 80%;
+  justify-self: center;
+}
+
+.oqueecpaas img {
+  justify-self: center;
+  width: 60%;
+}
+
+.oqueecpaas div h1 {
+  font-size: clamp(0.5rem, 4rem, 5rem);
+}
+
+.oqueecpaas div h1 span {
+  color: #be3237;
+  font-weight: bold;
+}
+
+.oqueecpaasContinuação {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 3%;
+}
+
+.oqueecpaasContinuação div {
+  width: 40%;
+  padding: 1rem;
+  text-align: justify;
+  color: var(--four-color);
+}
+
+@media (max-width: 1370px) {
+  .oqueecpaas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .quemSomos--info p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .oqueecpaasContinuação div {
+    width: 100%;
+  }
+}
+
+/* UTILIZAÇÕES */
+
+.cpaasUtilizacoes2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 150px 3%;
+}
+
+.cpaasUtilizacoes2 div img {
+  width: 30%;
+}
+
+.cpaasUtilizacoes2 div {
+  padding: 1rem;
+  color: var(--four-color);
+}
+
+.cpaasUtilizacoes2 div p {
+  text-align: justify;
+}
+
+@media (max-width: 1370px) {
+  .cpaasUtilizacoes2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 630px) {
+  .cpaasUtilizacoes2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* PORQUE TELECALL */
+.pqTeleCall {
+  background-color: #be3237;
+  margin-top: 5rem;
+}
+
+.pqTeleCall div {
+  padding: 10rem 15rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--four-color);
+}
+
+.pqTeleCall div h1 {
+  font-size: 4rem;
+}
+
+.pqTeleCall div p {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: justify;
+}
+
+@media (max-width: 1370px) {
+  .pqTeleCall div {
+    padding: 5rem 5rem;
+  }
+  .pqTeleCall div p {
+    font-size: inherit;
+  }
+}
+
+/* FOOTER - FOOTER  */
+footer {
+  background-color: rgb(80, 80, 80);
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  margin-top: 10rem;
+}
+
+.footerHeader {
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.footerHeader__img {
+  width: 60%;
+}
+
+.footercontato {
+  width: 20%;
+}
+
+.footercontato p {
+  margin: 1rem 0;
+  font-weight: 400;
+  color: white;
+}
+
+.btnFooter {
+  color: black;
+  background-color: var(--second-color);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: none;
+  transition: 0.5s ease;
+  text-decoration: none;
+  box-shadow: 10px 10px 70px -11px rgba(0, 0, 0, 0.49);
+}
+
+.footerNavbar {
+  display: flex;
+  margin-left: 15%;
+}
+
+.footerNavbar div {
+  padding: 2rem;
+}
+
+.footerNavbar div h1 {
+  font-size: 1.2rem;
+  color: rgb(214, 214, 214);
+}
+
+.footerNavbar div ul {
+  padding: 0;
+}
+
+.footerNavbar div ul li {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.footerNavbar div ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(146, 146, 146);
+}
+
+/* FOOTER AFTER */
+
+.footerAfter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3%;
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+
+.footerAfter p {
+  margin: 0;
+}
+
+.footerAfter--icons a {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: white;
+  transition: color ease 0.3s;
+}
+
+.footerAfter--icons a:hover {
+  color: #be3237;
+}
+
+@media (max-width: 1370px) {
+  .footercontato {
+    display: none;
+  }
+  .footerNavbar {
+    margin: 0;
+  }
+
+  .footerNavbar div {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
+

@@ -1,0 +1,25 @@
+:root {
+  --main-color: #f0f0f0;
+  --second-color: white;
+  --four-color: black;
+  --third-color: #e74a4f;
+}
+
+body.dark {
+  --main-color: rgb(24, 24, 24);
+  --second-color: white;
+  --four-color: white;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
