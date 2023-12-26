@@ -41,6 +41,7 @@ O objetivo principal do projeto foi desenvolver um site dedicado à divulgação
 - Editar informações do usuário - (Função do Administrador)
 - Excluir usuário - (Função do Administrador)
 <br>
+
 - Ver seu perfil - (Função do Usuário)
 - Editar suas informações - (Função do Usuário)
 
